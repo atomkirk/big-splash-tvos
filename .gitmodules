@@ -1,0 +1,3 @@
+[submodule "submodules/ATKShared"]
+	path = submodules/ATKShared
+	url = git@github.com:atomkirk/ATKShared.git

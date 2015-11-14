@@ -8,11 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		C25734791BEC4DE50080B996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734781BEC4DE50080B996 /* AppDelegate.swift */; };
-		C257347B1BEC4DE50080B996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C257347A1BEC4DE50080B996 /* ViewController.swift */; };
 		C257347E1BEC4DE50080B996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C257347C1BEC4DE50080B996 /* Main.storyboard */; };
 		C25734801BEC4DE50080B996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C257347F1BEC4DE50080B996 /* Assets.xcassets */; };
 		C257348B1BEC4DE50080B996 /* PertyPicturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C257348A1BEC4DE50080B996 /* PertyPicturesTests.swift */; };
 		C25734961BEC4DE50080B996 /* PertyPicturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734951BEC4DE50080B996 /* PertyPicturesUITests.swift */; };
+		C25734B81BEC4E0A0080B996 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A51BEC4E0A0080B996 /* 1.json */; };
+		C25734B91BEC4E0A0080B996 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A61BEC4E0A0080B996 /* 2.json */; };
+		C25734BA1BEC4E0A0080B996 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A71BEC4E0A0080B996 /* 3.json */; };
+		C25734BB1BEC4E0A0080B996 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A81BEC4E0A0080B996 /* 4.json */; };
+		C25734BC1BEC4E0A0080B996 /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A91BEC4E0A0080B996 /* 5.json */; };
+		C25734BD1BEC4E0A0080B996 /* 6.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734AA1BEC4E0A0080B996 /* 6.json */; };
+		C25734BE1BEC4E0A0080B996 /* 7.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734AB1BEC4E0A0080B996 /* 7.json */; };
+		C25734BF1BEC4E0A0080B996 /* 8.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734AC1BEC4E0A0080B996 /* 8.json */; };
+		C25734C01BEC4E0A0080B996 /* 9.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734AD1BEC4E0A0080B996 /* 9.json */; };
+		C25734C11BEC4E0A0080B996 /* 10.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734AE1BEC4E0A0080B996 /* 10.json */; };
+		C25734C21BEC4E0A0080B996 /* 11.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734AF1BEC4E0A0080B996 /* 11.json */; };
+		C25734C31BEC4E0A0080B996 /* 12.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B01BEC4E0A0080B996 /* 12.json */; };
+		C25734C41BEC4E0A0080B996 /* 13.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B11BEC4E0A0080B996 /* 13.json */; };
+		C25734C51BEC4E0A0080B996 /* 14.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B21BEC4E0A0080B996 /* 14.json */; };
+		C25734C61BEC4E0A0080B996 /* 15.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B31BEC4E0A0080B996 /* 15.json */; };
+		C25734C71BEC4E0A0080B996 /* 16.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B41BEC4E0A0080B996 /* 16.json */; };
+		C25734C81BEC4E0A0080B996 /* 17.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B51BEC4E0A0080B996 /* 17.json */; };
+		C25734C91BEC4E0A0080B996 /* 18.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B61BEC4E0A0080B996 /* 18.json */; };
+		C25734CA1BEC4E0A0080B996 /* 19.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734B71BEC4E0A0080B996 /* 19.json */; };
+		C25734DF1BEC4EC20080B996 /* ATKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25734D41BEC4E9E0080B996 /* ATKShared.framework */; };
+		C25734E31BEC4EEE0080B996 /* ATKShared.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C25734D41BEC4E9E0080B996 /* ATKShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C25734E81BEC50850080B996 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734E71BEC50850080B996 /* PhotosCollectionViewController.swift */; };
+		C25734EB1BEC50AC0080B996 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734E91BEC50AC0080B996 /* PhotoCell.swift */; };
+		C25734EC1BEC50AC0080B996 /* MasonryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734EA1BEC50AC0080B996 /* MasonryLayout.swift */; };
+		C25734EE1BEC50B80080B996 /* PhotoSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734ED1BEC50B80080B996 /* PhotoSearchService.swift */; };
+		C25734F21BEC55490080B996 /* ATKSharedUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25734D81BEC4E9E0080B996 /* ATKSharedUIKit.framework */; };
+		C25734F31BEC55500080B996 /* ATKSharedUIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C25734D81BEC4E9E0080B996 /* ATKSharedUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C25734F61BEE9EB30080B996 /* PhotoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734F51BEE9EB30080B996 /* PhotoPageViewController.swift */; };
+		C25734FA1BEEA01A0080B996 /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734F91BEEA01A0080B996 /* FullScreenPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +58,68 @@
 			remoteGlobalIDString = C25734741BEC4DE50080B996;
 			remoteInfo = PertyPictures;
 		};
+		C25734D31BEC4E9E0080B996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C28BBF6A1BB3630B00A0443C;
+			remoteInfo = ATKShared;
+		};
+		C25734D51BEC4E9E0080B996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C28BBF741BB3630B00A0443C;
+			remoteInfo = ATKSharedTests;
+		};
+		C25734D71BEC4E9E0080B996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C24BEF3C1BB37920004AAC33;
+			remoteInfo = ATKSharedUIKit;
+		};
+		C25734D91BEC4E9E0080B996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C24BEF451BB37920004AAC33;
+			remoteInfo = ATKSharedUIKitTests;
+		};
+		C25734DB1BEC4EB90080B996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C28BBF691BB3630B00A0443C;
+			remoteInfo = ATKShared;
+		};
+		C25734F01BEC55440080B996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C24BEF3B1BB37920004AAC33;
+			remoteInfo = ATKSharedUIKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C25734E11BEC4EDC0080B996 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C25734F31BEC55500080B996 /* ATKSharedUIKit.framework in Copy Frameworks */,
+				C25734E31BEC4EEE0080B996 /* ATKShared.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C25734751BEC4DE50080B996 /* PertyPictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PertyPictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25734781BEC4DE50080B996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C257347A1BEC4DE50080B996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C257347D1BEC4DE50080B996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C257347F1BEC4DE50080B996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C25734811BEC4DE50080B996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +129,32 @@
 		C25734911BEC4DE50080B996 /* PertyPicturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PertyPicturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25734951BEC4DE50080B996 /* PertyPicturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PertyPicturesUITests.swift; sourceTree = "<group>"; };
 		C25734971BEC4DE50080B996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25734A51BEC4E0A0080B996 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		C25734A61BEC4E0A0080B996 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		C25734A71BEC4E0A0080B996 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		C25734A81BEC4E0A0080B996 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		C25734A91BEC4E0A0080B996 /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
+		C25734AA1BEC4E0A0080B996 /* 6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 6.json; sourceTree = "<group>"; };
+		C25734AB1BEC4E0A0080B996 /* 7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 7.json; sourceTree = "<group>"; };
+		C25734AC1BEC4E0A0080B996 /* 8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 8.json; sourceTree = "<group>"; };
+		C25734AD1BEC4E0A0080B996 /* 9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 9.json; sourceTree = "<group>"; };
+		C25734AE1BEC4E0A0080B996 /* 10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 10.json; sourceTree = "<group>"; };
+		C25734AF1BEC4E0A0080B996 /* 11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 11.json; sourceTree = "<group>"; };
+		C25734B01BEC4E0A0080B996 /* 12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 12.json; sourceTree = "<group>"; };
+		C25734B11BEC4E0A0080B996 /* 13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 13.json; sourceTree = "<group>"; };
+		C25734B21BEC4E0A0080B996 /* 14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 14.json; sourceTree = "<group>"; };
+		C25734B31BEC4E0A0080B996 /* 15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 15.json; sourceTree = "<group>"; };
+		C25734B41BEC4E0A0080B996 /* 16.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 16.json; sourceTree = "<group>"; };
+		C25734B51BEC4E0A0080B996 /* 17.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 17.json; sourceTree = "<group>"; };
+		C25734B61BEC4E0A0080B996 /* 18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 18.json; sourceTree = "<group>"; };
+		C25734B71BEC4E0A0080B996 /* 19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 19.json; sourceTree = "<group>"; };
+		C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ATKShared.xcodeproj; path = submodules/ATKShared/ATKShared.xcodeproj; sourceTree = "<group>"; };
+		C25734E71BEC50850080B996 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		C25734E91BEC50AC0080B996 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C25734EA1BEC50AC0080B996 /* MasonryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasonryLayout.swift; sourceTree = "<group>"; };
+		C25734ED1BEC50B80080B996 /* PhotoSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSearchService.swift; sourceTree = "<group>"; };
+		C25734F51BEE9EB30080B996 /* PhotoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPageViewController.swift; sourceTree = "<group>"; };
+		C25734F91BEEA01A0080B996 /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25734F21BEC55490080B996 /* ATKSharedUIKit.framework in Frameworks */,
+				C25734DF1BEC4EC20080B996 /* ATKShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +191,7 @@
 				C25734891BEC4DE50080B996 /* PertyPicturesTests */,
 				C25734941BEC4DE50080B996 /* PertyPicturesUITests */,
 				C25734761BEC4DE50080B996 /* Products */,
+				C25734CB1BEC4E920080B996 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				C25734781BEC4DE50080B996 /* AppDelegate.swift */,
-				C257347A1BEC4DE50080B996 /* ViewController.swift */,
-				C257347C1BEC4DE50080B996 /* Main.storyboard */,
-				C257347F1BEC4DE50080B996 /* Assets.xcassets */,
-				C25734811BEC4DE50080B996 /* Info.plist */,
+				C25734E41BEC4F080080B996 /* Interface */,
+				C25734EF1BEC50BF0080B996 /* Services */,
+				C25734A31BEC4DF40080B996 /* Resources */,
 			);
 			path = PertyPictures;
 			sourceTree = "<group>";
@@ -122,6 +234,82 @@
 			path = PertyPicturesUITests;
 			sourceTree = "<group>";
 		};
+		C25734A31BEC4DF40080B996 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C257347F1BEC4DE50080B996 /* Assets.xcassets */,
+				C25734811BEC4DE50080B996 /* Info.plist */,
+				C25734A41BEC4DFD0080B996 /* Unsplash Photos */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C25734A41BEC4DFD0080B996 /* Unsplash Photos */ = {
+			isa = PBXGroup;
+			children = (
+				C25734A51BEC4E0A0080B996 /* 1.json */,
+				C25734A61BEC4E0A0080B996 /* 2.json */,
+				C25734A71BEC4E0A0080B996 /* 3.json */,
+				C25734A81BEC4E0A0080B996 /* 4.json */,
+				C25734A91BEC4E0A0080B996 /* 5.json */,
+				C25734AA1BEC4E0A0080B996 /* 6.json */,
+				C25734AB1BEC4E0A0080B996 /* 7.json */,
+				C25734AC1BEC4E0A0080B996 /* 8.json */,
+				C25734AD1BEC4E0A0080B996 /* 9.json */,
+				C25734AE1BEC4E0A0080B996 /* 10.json */,
+				C25734AF1BEC4E0A0080B996 /* 11.json */,
+				C25734B01BEC4E0A0080B996 /* 12.json */,
+				C25734B11BEC4E0A0080B996 /* 13.json */,
+				C25734B21BEC4E0A0080B996 /* 14.json */,
+				C25734B31BEC4E0A0080B996 /* 15.json */,
+				C25734B41BEC4E0A0080B996 /* 16.json */,
+				C25734B51BEC4E0A0080B996 /* 17.json */,
+				C25734B61BEC4E0A0080B996 /* 18.json */,
+				C25734B71BEC4E0A0080B996 /* 19.json */,
+			);
+			name = "Unsplash Photos";
+			sourceTree = "<group>";
+		};
+		C25734CB1BEC4E920080B996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C25734CD1BEC4E9E0080B996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25734D41BEC4E9E0080B996 /* ATKShared.framework */,
+				C25734D61BEC4E9E0080B996 /* ATKSharedTests.xctest */,
+				C25734D81BEC4E9E0080B996 /* ATKSharedUIKit.framework */,
+				C25734DA1BEC4E9E0080B996 /* ATKSharedUIKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C25734E41BEC4F080080B996 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C257347C1BEC4DE50080B996 /* Main.storyboard */,
+				C25734E71BEC50850080B996 /* PhotosCollectionViewController.swift */,
+				C25734E91BEC50AC0080B996 /* PhotoCell.swift */,
+				C25734EA1BEC50AC0080B996 /* MasonryLayout.swift */,
+				C25734F51BEE9EB30080B996 /* PhotoPageViewController.swift */,
+				C25734F91BEEA01A0080B996 /* FullScreenPhotoViewController.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		C25734EF1BEC50BF0080B996 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C25734ED1BEC50B80080B996 /* PhotoSearchService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +320,13 @@
 				C25734711BEC4DE50080B996 /* Sources */,
 				C25734721BEC4DE50080B996 /* Frameworks */,
 				C25734731BEC4DE50080B996 /* Resources */,
+				C25734E11BEC4EDC0080B996 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C25734F11BEC55440080B996 /* PBXTargetDependency */,
+				C25734DC1BEC4EB90080B996 /* PBXTargetDependency */,
 			);
 			name = PertyPictures;
 			productName = PertyPictures;
@@ -190,6 +381,7 @@
 				TargetAttributes = {
 					C25734741BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8KEA7736VV;
 					};
 					C25734851BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
@@ -212,6 +404,12 @@
 			mainGroup = C257346C1BEC4DE50080B996;
 			productRefGroup = C25734761BEC4DE50080B996 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C25734CD1BEC4E9E0080B996 /* Products */;
+					ProjectRef = C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C25734741BEC4DE50080B996 /* PertyPictures */,
@@ -221,12 +419,62 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		C25734D41BEC4E9E0080B996 /* ATKShared.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ATKShared.framework;
+			remoteRef = C25734D31BEC4E9E0080B996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C25734D61BEC4E9E0080B996 /* ATKSharedTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ATKSharedTests.xctest;
+			remoteRef = C25734D51BEC4E9E0080B996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C25734D81BEC4E9E0080B996 /* ATKSharedUIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ATKSharedUIKit.framework;
+			remoteRef = C25734D71BEC4E9E0080B996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C25734DA1BEC4E9E0080B996 /* ATKSharedUIKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ATKSharedUIKitTests.xctest;
+			remoteRef = C25734D91BEC4E9E0080B996 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		C25734731BEC4DE50080B996 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25734C81BEC4E0A0080B996 /* 17.json in Resources */,
+				C25734C21BEC4E0A0080B996 /* 11.json in Resources */,
+				C25734C11BEC4E0A0080B996 /* 10.json in Resources */,
+				C25734CA1BEC4E0A0080B996 /* 19.json in Resources */,
+				C25734C61BEC4E0A0080B996 /* 15.json in Resources */,
+				C25734BF1BEC4E0A0080B996 /* 8.json in Resources */,
+				C25734BA1BEC4E0A0080B996 /* 3.json in Resources */,
+				C25734C51BEC4E0A0080B996 /* 14.json in Resources */,
+				C25734BC1BEC4E0A0080B996 /* 5.json in Resources */,
+				C25734B91BEC4E0A0080B996 /* 2.json in Resources */,
+				C25734C41BEC4E0A0080B996 /* 13.json in Resources */,
 				C25734801BEC4DE50080B996 /* Assets.xcassets in Resources */,
+				C25734BE1BEC4E0A0080B996 /* 7.json in Resources */,
+				C25734BD1BEC4E0A0080B996 /* 6.json in Resources */,
+				C25734C71BEC4E0A0080B996 /* 16.json in Resources */,
+				C25734C01BEC4E0A0080B996 /* 9.json in Resources */,
+				C25734C31BEC4E0A0080B996 /* 12.json in Resources */,
+				C25734C91BEC4E0A0080B996 /* 18.json in Resources */,
+				C25734B81BEC4E0A0080B996 /* 1.json in Resources */,
+				C25734BB1BEC4E0A0080B996 /* 4.json in Resources */,
 				C257347E1BEC4DE50080B996 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,8 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C257347B1BEC4DE50080B996 /* ViewController.swift in Sources */,
+				C25734EE1BEC50B80080B996 /* PhotoSearchService.swift in Sources */,
+				C25734EB1BEC50AC0080B996 /* PhotoCell.swift in Sources */,
+				C25734F61BEE9EB30080B996 /* PhotoPageViewController.swift in Sources */,
 				C25734791BEC4DE50080B996 /* AppDelegate.swift in Sources */,
+				C25734EC1BEC50AC0080B996 /* MasonryLayout.swift in Sources */,
+				C25734FA1BEEA01A0080B996 /* FullScreenPhotoViewController.swift in Sources */,
+				C25734E81BEC50850080B996 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +538,16 @@
 			isa = PBXTargetDependency;
 			target = C25734741BEC4DE50080B996 /* PertyPictures */;
 			targetProxy = C25734921BEC4DE50080B996 /* PBXContainerItemProxy */;
+		};
+		C25734DC1BEC4EB90080B996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ATKShared;
+			targetProxy = C25734DB1BEC4EB90080B996 /* PBXContainerItemProxy */;
+		};
+		C25734F11BEC55440080B996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ATKSharedUIKit;
+			targetProxy = C25734F01BEC55440080B996 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,10 +649,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PertyPictures/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.PertyPictures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -398,10 +664,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PertyPictures/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.PertyPictures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -472,6 +741,7 @@
 				C257349C1BEC4DE50080B996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C257349D1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "PertyPicturesTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +750,7 @@
 				C257349F1BEC4DE50080B996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C25734A01BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "PertyPicturesUITests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +759,7 @@
 				C25734A21BEC4DE50080B996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
