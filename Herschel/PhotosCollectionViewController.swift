@@ -8,10 +8,11 @@
 
 import UIKit
 import ATKShared
+import ATKSharedUIKit
 
 private let cellIdentifier = "PhotoCell"
 
-class PhotosCollectionViewController: UICollectionViewController, MasonryLayoutDelegate {
+class PhotosCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var photoService = PhotoSearchService()
     
@@ -20,20 +21,18 @@ class PhotosCollectionViewController: UICollectionViewController, MasonryLayoutD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let layout = collectionView?.collectionViewLayout as? MasonryLayout {
-            layout.delegate = self
+        self.loadMorePhotos {
+            self.loadMorePhotos()
         }
-        
-            self.loadMorePhotos {
-//                StatusHUD.dismissWithCompletion()
-                self.loadMorePhotos()
-            }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "FullScreenImageSegue" {
             if let controller = segue.destinationViewController as? PhotoPageViewController {
-                controller.photos = photos
+                if let ip = collectionView?.indexPathsForSelectedItems()?.first {
+                    controller.selectedPhoto = photos[ip.item]
+                    controller.photos = photos
+                }
             }
         }
     }
@@ -63,10 +62,13 @@ class PhotosCollectionViewController: UICollectionViewController, MasonryLayoutD
     
     // MARK: - UICollectionViewDelegateFlowLayout
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, heightForItemAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let photo = photos[indexPath.row]
-        let thumbWidth = (self.collectionView!.width / 2.0) - 2.5
-        return (thumbWidth / photo.size.width) * photo.size.height
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        // how many times do photos fit if they are of width 200?
+        let minPhotos = Int(round(collectionView.width / 200.0))
+        // figure out with of one higher
+        let dim = CGFloat(collectionView.width / CGFloat(minPhotos + 1))
+        
+        return CGSize(width: dim, height: dim)
     }
     
     
