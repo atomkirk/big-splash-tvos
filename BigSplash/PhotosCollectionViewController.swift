@@ -54,12 +54,22 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
         return cell
     }
     
+    override func collectionView(collectionView: UICollectionView, canFocusItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
+            collectionView.bringSubviewToFront(cell)
+        }
+        return true
+    }
+    
+    
+    // MARK: - Scroll view delegate
+    
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         if collectionView!.isWithinPoints(50, toEdge: UIRectEdge.Bottom) {
             loadMorePhotos()
         }
     }
-    
+
     
     // MARK: - UICollectionViewDelegateFlowLayout
     
@@ -68,7 +78,6 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
         let minPhotos = Int(round(collectionView.width / 200.0))
         // figure out with of one higher
         let dim = CGFloat(collectionView.width / CGFloat(minPhotos + 1))
-        
         return CGSize(width: dim, height: dim)
     }
     
@@ -76,7 +85,9 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
     // MARK: - Photo Page Controller Delegate
     
     func photoPageViewController(controller: PhotoPageViewController, isReachingLastPhoto photo: PhotoSearchService.Photo) {
-        loadMorePhotos()
+        loadMorePhotos {
+            controller.photos = self.photos
+        }
     }
     
     
