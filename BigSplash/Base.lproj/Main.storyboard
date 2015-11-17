@@ -8,7 +8,7 @@
         <!--Photos Collection View Controller-->
         <scene sceneID="za4-q4-aCM">
             <objects>
-                <collectionViewController id="4cD-6n-2Xb" customClass="PhotosCollectionViewController" customModule="BigSplash" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController clearsSelectionOnViewWillAppear="NO" id="4cD-6n-2Xb" customClass="PhotosCollectionViewController" customModule="BigSplash" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RBx-b8-OaO">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,8 +27,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rol-ee-gJD">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="218"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rol-ee-gJD">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <animations/>
                                         </imageView>
                                     </subviews>

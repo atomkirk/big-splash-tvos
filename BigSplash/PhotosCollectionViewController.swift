@@ -20,6 +20,7 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView!.remembersLastFocusedIndexPath = true
         
         self.loadMorePhotos {
             self.loadMorePhotos()
@@ -87,6 +88,7 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
     func photoPageViewController(controller: PhotoPageViewController, isReachingLastPhoto photo: PhotoSearchService.Photo) {
         loadMorePhotos {
             controller.photos = self.photos
+            self.collectionView?.reloadData()
         }
     }
     
