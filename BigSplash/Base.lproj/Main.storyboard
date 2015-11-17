@@ -8,7 +8,7 @@
         <!--Photos Collection View Controller-->
         <scene sceneID="za4-q4-aCM">
             <objects>
-                <collectionViewController id="4cD-6n-2Xb" customClass="PhotosCollectionViewController" customModule="Herschel" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="4cD-6n-2Xb" customClass="PhotosCollectionViewController" customModule="BigSplash" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RBx-b8-OaO">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="8gi-BB-gPO" customClass="PhotoCell" customModule="Herschel" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="8gi-BB-gPO" customClass="PhotoCell" customModule="BigSplash" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -61,7 +61,7 @@
         <!--Photo Page View Controller-->
         <scene sceneID="CF7-a7-2Oq">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="oQ4-Oa-41k" customClass="PhotoPageViewController" customModule="Herschel" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="oQ4-Oa-41k" customClass="PhotoPageViewController" customModule="BigSplash" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58x-15-2KD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2027" y="362"/>
@@ -69,7 +69,7 @@
         <!--Full Screen Photo View Controller-->
         <scene sceneID="vhQ-SQ-NK1">
             <objects>
-                <viewController storyboardIdentifier="FullScreenPhotoViewController" id="ALF-mo-IWP" customClass="FullScreenPhotoViewController" customModule="Herschel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullScreenPhotoViewController" id="ALF-mo-IWP" customClass="FullScreenPhotoViewController" customModule="BigSplash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qPC-Mj-rC1"/>
                         <viewControllerLayoutGuide type="bottom" id="bER-q9-Yln"/>

@@ -1,6 +1,6 @@
 //
 //  FullScreenPhotoViewController.swift
-//  Herschel
+//  BigSplash
 //
 //  Created by Adam Kirk on 11/7/15.
 //  Copyright © 2015 Adam Kirk. All rights reserved.
@@ -12,9 +12,9 @@ import ATKShared
 class FullScreenPhotoViewController: UIViewController {
 
     var imageURL: NSURL?
-    
+
     @IBOutlet weak var imageView: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if let url = imageURL {

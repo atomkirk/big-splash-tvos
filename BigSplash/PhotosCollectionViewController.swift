@@ -12,7 +12,7 @@ import ATKSharedUIKit
 
 private let cellIdentifier = "PhotoCell"
 
-class PhotosCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class PhotosCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, PhotoPageViewControllerDelegate {
     
     var photoService = PhotoSearchService()
     
@@ -32,6 +32,7 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
                 if let ip = collectionView?.indexPathsForSelectedItems()?.first {
                     controller.selectedPhoto = photos[ip.item]
                     controller.photos = photos
+                    controller.photoPageDelegate = self
                 }
             }
         }
@@ -69,6 +70,13 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
         let dim = CGFloat(collectionView.width / CGFloat(minPhotos + 1))
         
         return CGSize(width: dim, height: dim)
+    }
+    
+    
+    // MARK: - Photo Page Controller Delegate
+    
+    func photoPageViewController(controller: PhotoPageViewController, isReachingLastPhoto photo: PhotoSearchService.Photo) {
+        loadMorePhotos()
     }
     
     

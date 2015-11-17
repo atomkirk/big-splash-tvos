@@ -10,8 +10,8 @@
 		C25734791BEC4DE50080B996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734781BEC4DE50080B996 /* AppDelegate.swift */; };
 		C257347E1BEC4DE50080B996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C257347C1BEC4DE50080B996 /* Main.storyboard */; };
 		C25734801BEC4DE50080B996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C257347F1BEC4DE50080B996 /* Assets.xcassets */; };
-		C257348B1BEC4DE50080B996 /* HerschelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C257348A1BEC4DE50080B996 /* HerschelTests.swift */; };
-		C25734961BEC4DE50080B996 /* HerschelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734951BEC4DE50080B996 /* HerschelUITests.swift */; };
+		C257348B1BEC4DE50080B996 /* BigSplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C257348A1BEC4DE50080B996 /* BigSplashTests.swift */; };
+		C25734961BEC4DE50080B996 /* BigSplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734951BEC4DE50080B996 /* BigSplashUITests.swift */; };
 		C25734B81BEC4E0A0080B996 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A51BEC4E0A0080B996 /* 1.json */; };
 		C25734B91BEC4E0A0080B996 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A61BEC4E0A0080B996 /* 2.json */; };
 		C25734BA1BEC4E0A0080B996 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = C25734A71BEC4E0A0080B996 /* 3.json */; };
@@ -48,14 +48,14 @@
 			containerPortal = C257346D1BEC4DE50080B996 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C25734741BEC4DE50080B996;
-			remoteInfo = Herschel;
+			remoteInfo = BigSplash;
 		};
 		C25734921BEC4DE50080B996 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C257346D1BEC4DE50080B996 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C25734741BEC4DE50080B996;
-			remoteInfo = Herschel;
+			remoteInfo = BigSplash;
 		};
 		C25734D31BEC4E9E0080B996 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -117,16 +117,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C25734751BEC4DE50080B996 /* Herschel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Herschel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25734751BEC4DE50080B996 /* BigSplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigSplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25734781BEC4DE50080B996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C257347D1BEC4DE50080B996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C257347F1BEC4DE50080B996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C25734811BEC4DE50080B996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C25734861BEC4DE50080B996 /* Herschel.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Herschel.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C257348A1BEC4DE50080B996 /* HerschelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerschelTests.swift; sourceTree = "<group>"; };
+		C25734861BEC4DE50080B996 /* BigSplash.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigSplash.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C257348A1BEC4DE50080B996 /* BigSplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSplashTests.swift; sourceTree = "<group>"; };
 		C257348C1BEC4DE50080B996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C25734911BEC4DE50080B996 /* Herschel.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Herschel.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C25734951BEC4DE50080B996 /* HerschelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerschelUITests.swift; sourceTree = "<group>"; };
+		C25734911BEC4DE50080B996 /* BigSplash.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigSplash.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25734951BEC4DE50080B996 /* BigSplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSplashUITests.swift; sourceTree = "<group>"; };
 		C25734971BEC4DE50080B996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C25734A51BEC4E0A0080B996 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 		C25734A61BEC4E0A0080B996 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
@@ -185,9 +185,9 @@
 		C257346C1BEC4DE50080B996 = {
 			isa = PBXGroup;
 			children = (
-				C25734771BEC4DE50080B996 /* Herschel */,
-				C25734891BEC4DE50080B996 /* HerschelTests */,
-				C25734941BEC4DE50080B996 /* HerschelUITests */,
+				C25734771BEC4DE50080B996 /* BigSplash */,
+				C25734891BEC4DE50080B996 /* BigSplashTests */,
+				C25734941BEC4DE50080B996 /* BigSplashUITests */,
 				C25734761BEC4DE50080B996 /* Products */,
 				C25734CB1BEC4E920080B996 /* Frameworks */,
 			);
@@ -196,14 +196,14 @@
 		C25734761BEC4DE50080B996 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C25734751BEC4DE50080B996 /* Herschel.app */,
-				C25734861BEC4DE50080B996 /* Herschel.xctest */,
-				C25734911BEC4DE50080B996 /* Herschel.xctest */,
+				C25734751BEC4DE50080B996 /* BigSplash.app */,
+				C25734861BEC4DE50080B996 /* BigSplash.xctest */,
+				C25734911BEC4DE50080B996 /* BigSplash.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C25734771BEC4DE50080B996 /* Herschel */ = {
+		C25734771BEC4DE50080B996 /* BigSplash */ = {
 			isa = PBXGroup;
 			children = (
 				C25734781BEC4DE50080B996 /* AppDelegate.swift */,
@@ -211,25 +211,25 @@
 				C25734EF1BEC50BF0080B996 /* Services */,
 				C25734A31BEC4DF40080B996 /* Resources */,
 			);
-			path = Herschel;
+			path = BigSplash;
 			sourceTree = "<group>";
 		};
-		C25734891BEC4DE50080B996 /* HerschelTests */ = {
+		C25734891BEC4DE50080B996 /* BigSplashTests */ = {
 			isa = PBXGroup;
 			children = (
-				C257348A1BEC4DE50080B996 /* HerschelTests.swift */,
+				C257348A1BEC4DE50080B996 /* BigSplashTests.swift */,
 				C257348C1BEC4DE50080B996 /* Info.plist */,
 			);
-			path = HerschelTests;
+			path = BigSplashTests;
 			sourceTree = "<group>";
 		};
-		C25734941BEC4DE50080B996 /* HerschelUITests */ = {
+		C25734941BEC4DE50080B996 /* BigSplashUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C25734951BEC4DE50080B996 /* HerschelUITests.swift */,
+				C25734951BEC4DE50080B996 /* BigSplashUITests.swift */,
 				C25734971BEC4DE50080B996 /* Info.plist */,
 			);
-			path = HerschelUITests;
+			path = BigSplashUITests;
 			sourceTree = "<group>";
 		};
 		C25734A31BEC4DF40080B996 /* Resources */ = {
@@ -318,9 +318,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C25734741BEC4DE50080B996 /* Herschel */ = {
+		C25734741BEC4DE50080B996 /* BigSplash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C257349A1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "Herschel" */;
+			buildConfigurationList = C257349A1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplash" */;
 			buildPhases = (
 				C25734711BEC4DE50080B996 /* Sources */,
 				C25734721BEC4DE50080B996 /* Frameworks */,
@@ -333,14 +333,14 @@
 				C25734F11BEC55440080B996 /* PBXTargetDependency */,
 				C25734DC1BEC4EB90080B996 /* PBXTargetDependency */,
 			);
-			name = Herschel;
-			productName = Herschel;
-			productReference = C25734751BEC4DE50080B996 /* Herschel.app */;
+			name = BigSplash;
+			productName = BigSplash;
+			productReference = C25734751BEC4DE50080B996 /* BigSplash.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C25734851BEC4DE50080B996 /* HerschelTests */ = {
+		C25734851BEC4DE50080B996 /* BigSplashTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C257349D1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "HerschelTests" */;
+			buildConfigurationList = C257349D1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplashTests" */;
 			buildPhases = (
 				C25734821BEC4DE50080B996 /* Sources */,
 				C25734831BEC4DE50080B996 /* Frameworks */,
@@ -351,14 +351,14 @@
 			dependencies = (
 				C25734881BEC4DE50080B996 /* PBXTargetDependency */,
 			);
-			name = HerschelTests;
-			productName = HerschelTests;
-			productReference = C25734861BEC4DE50080B996 /* Herschel.xctest */;
+			name = BigSplashTests;
+			productName = BigSplashTests;
+			productReference = C25734861BEC4DE50080B996 /* BigSplash.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C25734901BEC4DE50080B996 /* HerschelUITests */ = {
+		C25734901BEC4DE50080B996 /* BigSplashUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C25734A01BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "HerschelUITests" */;
+			buildConfigurationList = C25734A01BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplashUITests" */;
 			buildPhases = (
 				C257348D1BEC4DE50080B996 /* Sources */,
 				C257348E1BEC4DE50080B996 /* Frameworks */,
@@ -369,9 +369,9 @@
 			dependencies = (
 				C25734931BEC4DE50080B996 /* PBXTargetDependency */,
 			);
-			name = HerschelUITests;
-			productName = HerschelUITests;
-			productReference = C25734911BEC4DE50080B996 /* Herschel.xctest */;
+			name = BigSplashUITests;
+			productName = BigSplashUITests;
+			productReference = C25734911BEC4DE50080B996 /* BigSplash.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -398,7 +398,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C25734701BEC4DE50080B996 /* Build configuration list for PBXProject "Herschel" */;
+			buildConfigurationList = C25734701BEC4DE50080B996 /* Build configuration list for PBXProject "BigSplash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -417,9 +417,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				C25734741BEC4DE50080B996 /* Herschel */,
-				C25734851BEC4DE50080B996 /* HerschelTests */,
-				C25734901BEC4DE50080B996 /* HerschelUITests */,
+				C25734741BEC4DE50080B996 /* BigSplash */,
+				C25734851BEC4DE50080B996 /* BigSplashTests */,
+				C25734901BEC4DE50080B996 /* BigSplashUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -518,7 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C257348B1BEC4DE50080B996 /* HerschelTests.swift in Sources */,
+				C257348B1BEC4DE50080B996 /* BigSplashTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25734961BEC4DE50080B996 /* HerschelUITests.swift in Sources */,
+				C25734961BEC4DE50080B996 /* BigSplashUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,12 +535,12 @@
 /* Begin PBXTargetDependency section */
 		C25734881BEC4DE50080B996 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C25734741BEC4DE50080B996 /* Herschel */;
+			target = C25734741BEC4DE50080B996 /* BigSplash */;
 			targetProxy = C25734871BEC4DE50080B996 /* PBXContainerItemProxy */;
 		};
 		C25734931BEC4DE50080B996 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C25734741BEC4DE50080B996 /* Herschel */;
+			target = C25734741BEC4DE50080B996 /* BigSplash */;
 			targetProxy = C25734921BEC4DE50080B996 /* PBXContainerItemProxy */;
 		};
 		C25734DC1BEC4EB90080B996 /* PBXTargetDependency */ = {
@@ -655,10 +655,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Herschel/Info.plist;
+				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.Herschel;
-				PRODUCT_NAME = Herschel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplash;
+				PRODUCT_NAME = BigSplash;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -670,10 +670,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Herschel/Info.plist;
+				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.Herschel;
-				PRODUCT_NAME = Herschel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplash;
+				PRODUCT_NAME = BigSplash;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -682,11 +682,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HerschelTests/Info.plist;
+				INFOPLIST_FILE = BigSplashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.HerschelTests;
-				PRODUCT_NAME = Herschel;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Herschel.app/Herschel";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashTests;
+				PRODUCT_NAME = BigSplash;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigSplash.app/BigSplash";
 			};
 			name = Debug;
 		};
@@ -694,22 +694,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HerschelTests/Info.plist;
+				INFOPLIST_FILE = BigSplashTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.HerschelTests;
-				PRODUCT_NAME = Herschel;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Herschel.app/Herschel";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashTests;
+				PRODUCT_NAME = BigSplash;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigSplash.app/BigSplash";
 			};
 			name = Release;
 		};
 		C25734A11BEC4DE50080B996 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = HerschelUITests/Info.plist;
+				INFOPLIST_FILE = BigSplashUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.HerschelUITests;
-				PRODUCT_NAME = Herschel;
-				TEST_TARGET_NAME = Herschel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashUITests;
+				PRODUCT_NAME = BigSplash;
+				TEST_TARGET_NAME = BigSplash;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -717,11 +717,11 @@
 		C25734A21BEC4DE50080B996 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = HerschelUITests/Info.plist;
+				INFOPLIST_FILE = BigSplashUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.HerschelUITests;
-				PRODUCT_NAME = Herschel;
-				TEST_TARGET_NAME = Herschel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashUITests;
+				PRODUCT_NAME = BigSplash;
+				TEST_TARGET_NAME = BigSplash;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -729,7 +729,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C25734701BEC4DE50080B996 /* Build configuration list for PBXProject "Herschel" */ = {
+		C25734701BEC4DE50080B996 /* Build configuration list for PBXProject "BigSplash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C25734981BEC4DE50080B996 /* Debug */,
@@ -738,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C257349A1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "Herschel" */ = {
+		C257349A1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C257349B1BEC4DE50080B996 /* Debug */,
@@ -747,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C257349D1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "HerschelTests" */ = {
+		C257349D1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplashTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C257349E1BEC4DE50080B996 /* Debug */,
@@ -756,7 +756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C25734A01BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "HerschelUITests" */ = {
+		C25734A01BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplashUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C25734A11BEC4DE50080B996 /* Debug */,

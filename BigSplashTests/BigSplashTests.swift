@@ -1,15 +1,15 @@
 //
-//  HerschelTests.swift
-//  HerschelTests
+//  BigSplashTests.swift
+//  BigSplashTests
 //
 //  Created by Adam Kirk on 11/5/15.
 //  Copyright © 2015 Adam Kirk. All rights reserved.
 //
 
 import XCTest
-@testable import Herschel
+@testable import BigSplash
 
-class HerschelTests: XCTestCase {
+class BigSplashTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
