@@ -23,22 +23,23 @@ class PhotoSearchService {
     
     func next(completion: PhotoSearchServiceCompletionBlock) {
         Q.background {
-            let path = NSBundle.mainBundle().pathForResource("\(self.page++)", ofType: "json")!
-            let data = NSFileManager.defaultManager().contentsAtPath(path)
-            var newPhotos = [Photo]()
-            if let data = data, json = JSON.fromData(data).json {
-                for photo in json.array! {
-                    if let wv = photo["width"].integer,
-                        let hv = photo["height"].integer,
-                        let thumbURL = photo["urls"]["thumb"].url,
-                        let regularURL = photo["urls"]["regular"].url {
-                            let width = CGFloat(wv)
-                            let height = CGFloat(hv)
-                            newPhotos.append(Photo(size: CGSize(width: width, height: height), fullSizeURL: regularURL, thumbnailURL: thumbURL))
+            if let path = NSBundle.mainBundle().pathForResource("\(self.page++)", ofType: "json") {
+                let data = NSFileManager.defaultManager().contentsAtPath(path)
+                var newPhotos = [Photo]()
+                if let data = data, json = JSON.fromData(data).json {
+                    for photo in json.array! {
+                        if let wv = photo["width"].integer,
+                            let hv = photo["height"].integer,
+                            let thumbURL = photo["urls"]["thumb"].url,
+                            let regularURL = photo["urls"]["regular"].url {
+                                let width = CGFloat(wv)
+                                let height = CGFloat(hv)
+                                newPhotos.append(Photo(size: CGSize(width: width, height: height), fullSizeURL: regularURL, thumbnailURL: thumbURL))
+                        }
                     }
-                }
-                Q.main {
-                    completion(photos: newPhotos)
+                    Q.main {
+                        completion(photos: newPhotos)
+                    }
                 }
             }
         }

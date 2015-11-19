@@ -22,9 +22,7 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
         super.viewDidLoad()
         collectionView!.remembersLastFocusedIndexPath = true
         
-        self.loadMorePhotos {
-            self.loadMorePhotos()
-        }
+        self.loadMorePhotos()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

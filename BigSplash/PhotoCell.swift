@@ -11,14 +11,10 @@ import ATKShared
 
 class PhotoCell: UICollectionViewCell {
     
-    var second: Bool = false
+    var count: Int = 0
     
     var imageURL: NSURL? {
         didSet {
-            if oldValue != nil {
-                print("second: \(imageView.image)")
-                second = true
-            }
             imageView.image = nil
             displayImageAtURL(imageURL)
         }
@@ -34,14 +30,8 @@ class PhotoCell: UICollectionViewCell {
     private func displayImageAtURL(loadURL: NSURL?) {
         if let url = loadURL {
             ImageCache.shared.loadImageAtURL(url) { originalURL, cached, image in
-                if self.second {
-                    print("here1: \(self.imageView.image)")
-                }
                 if originalURL == self.imageURL {
                     self.imageView.image = image
-                    if self.second {
-                        print("here2: \(self.imageView.image)")
-                    }
                     if !cached {
                         self.imageView.alpha = 0
                         self.imageView.transform = CGAffineTransformMakeScale(0.9, 0.9)
@@ -52,12 +42,6 @@ class PhotoCell: UICollectionViewCell {
                             self.imageView.transform = CGAffineTransformIdentity
                         }
                     }
-                }
-                else {
-                    if self.imageURL == nil {
-                        print("here")
-                    }
-                    self.displayImageAtURL(self.imageURL)
                 }
             }
         }

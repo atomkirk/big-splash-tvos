@@ -37,7 +37,7 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
         if let controller = viewController as? FullScreenPhotoViewController {
             if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
                 let nextIndex = index - 1
-                if nextIndex > 0 {
+                if nextIndex >= 0 {
                     let photo = photos[nextIndex]
                     if let nextController = storyboard?.instantiateViewControllerWithIdentifier("FullScreenPhotoViewController") as? FullScreenPhotoViewController {
                         nextController.imageURL = photo.fullSizeURL
