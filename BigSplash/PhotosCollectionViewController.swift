@@ -48,6 +48,7 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
         let photo = photos[indexPath.row]
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath)
         if let cell = cell as? PhotoCell {
+            cell.backgroundColor = photo.color
             cell.imageURL = photo.thumbnailURL
         }
         return cell

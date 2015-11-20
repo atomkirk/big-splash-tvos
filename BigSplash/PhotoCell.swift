@@ -51,12 +51,8 @@ class PhotoCell: UICollectionViewCell {
                     self.imageView.image = image
                     if !cached {
                         self.imageView.alpha = 0
-                        self.imageView.transform = CGAffineTransformMakeScale(0.9, 0.9)
                         UIView.animateWithDuration(0.33) {
                             self.imageView.alpha = 1
-                        }
-                        UIView.animateWithDuration(0.5) {
-                            self.imageView.transform = CGAffineTransformIdentity
                         }
                     }
                 }

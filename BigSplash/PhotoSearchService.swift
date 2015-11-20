@@ -17,6 +17,7 @@ class PhotoSearchService {
         let size: CGSize
         let fullSizeURL: NSURL
         let thumbnailURL: NSURL
+        let color: UIColor
     }
     
     private var page: Int = 1
@@ -35,10 +36,12 @@ class PhotoSearchService {
                                 if let wv = photo["width"].integer,
                                     let hv = photo["height"].integer,
                                     let thumbURL = photo["urls"]["thumb"].url,
-                                    let regularURL = photo["urls"]["regular"].url {
+                                    let regularURL = photo["urls"]["regular"].url,
+                                    let color = photo["color"].string {
                                         let width = CGFloat(wv)
                                         let height = CGFloat(hv)
-                                        newPhotos.append(Photo(size: CGSize(width: width, height: height), fullSizeURL: regularURL, thumbnailURL: thumbURL))
+                                        let color = UIColor(hexString: color)
+                                        newPhotos.append(Photo(size: CGSize(width: width, height: height), fullSizeURL: regularURL, thumbnailURL: thumbURL, color: color))
                                 }
                             }
                             Q.main {

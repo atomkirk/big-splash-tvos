@@ -323,6 +323,7 @@
 			buildConfigurationList = C257349A1BEC4DE50080B996 /* Build configuration list for PBXNativeTarget "BigSplash" */;
 			buildPhases = (
 				C25734711BEC4DE50080B996 /* Sources */,
+				C27E5C941BFEBC3E00CADB0F /* Bump Build Number */,
 				C25734721BEC4DE50080B996 /* Frameworks */,
 				C25734731BEC4DE50080B996 /* Resources */,
 				C25734E11BEC4EDC0080B996 /* Copy Frameworks */,
@@ -386,7 +387,7 @@
 				TargetAttributes = {
 					C25734741BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = P3U5643N93;
+						DevelopmentTeam = D6XWGC22PX;
 					};
 					C25734851BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
@@ -500,6 +501,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C27E5C941BFEBC3E00CADB0F /* Bump Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bump Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nif [ -e ~/.dotfiles/xcode/build.zsh ]\nthen\nsource ~/.dotfiles/xcode/build.zsh\nfi\n\nif [ \"$BUMP_BUILD_NUMBER\" = \"1\" ] ; then\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C25734711BEC4DE50080B996 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -595,6 +613,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"BUMP_BUILD_NUMBER=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -634,6 +653,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "BUMP_BUILD_NUMBER=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -657,7 +677,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashTV;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomkirk.big-splash";
 				PRODUCT_NAME = BigSplash;
 				PROVISIONING_PROFILE = "";
 			};
@@ -672,7 +692,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashTV;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomkirk.big-splash";
 				PRODUCT_NAME = BigSplash;
 				PROVISIONING_PROFILE = "";
 			};

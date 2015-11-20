@@ -19,9 +19,7 @@ class FullScreenPhotoViewController: UIViewController {
         super.viewDidLoad()
         if let url = imageURL {
             ImageCache.shared.loadImageAtURL(url) { originalURL, cached, image in
-                if originalURL == self.imageURL {
-                    self.imageView.image = image
-                }
+                self.imageView.image = image
             }
         }
     }

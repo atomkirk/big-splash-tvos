@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ATKShared
 
 protocol PhotoPageViewControllerDelegate {
     func photoPageViewController(controller: PhotoPageViewController, isReachingLastPhoto photo: PhotoSearchService.Photo)
@@ -28,6 +29,7 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
             let imageURL = selectedPhoto?.fullSizeURL {
                 controller.imageURL = imageURL
                 self.setViewControllers([controller], direction: .Forward, animated: false, completion: nil)
+                preloadImagesSurrounding(controller)
         }
         self.dataSource = self
     }
@@ -41,13 +43,15 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
     // MARK: - Timer
     
     func slideTimerDidTick(note: NSNotification) {
-        if let controller = nextController() {
+        if let controller = nextController() as? FullScreenPhotoViewController {
+            preloadImagesSurrounding(controller)
             setViewControllers([controller], direction: .Forward, animated: true, completion: nil)
         }
         else if photos.count > 0 {
             let photo = photos[0]
             
             if let firstController = storyboard?.instantiateViewControllerWithIdentifier("FullScreenPhotoViewController") as? FullScreenPhotoViewController {
+                preloadImagesSurrounding(firstController)
                 firstController.imageURL = photo.fullSizeURL
                 setViewControllers([firstController], direction: .Forward, animated: true, completion: nil)
             }
@@ -60,6 +64,7 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         resetTimer()
         if let controller = viewController as? FullScreenPhotoViewController {
+            preloadImagesSurrounding(controller)
             if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
                 let nextIndex = index - 1
                 if nextIndex >= 0 {
@@ -84,6 +89,7 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
     
     private func nextController() -> UIViewController? {
         if let controller = viewControllers?.first as? FullScreenPhotoViewController {
+            preloadImagesSurrounding(controller)
             if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
                 let nextIndex = index + 1
                 if nextIndex < photos.count {
@@ -101,6 +107,16 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
             }
         }
         return nil
+    }
+    
+    private func preloadImagesSurrounding(controller: FullScreenPhotoViewController) {
+        if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
+            for i in max(0, index - 2)...min(index + 2, photos.count) {
+                let photo = photos[i]
+                print("preloaded: \(i)")
+                ImageCache.shared.preloadImageAtURL(photo.fullSizeURL)
+            }
+        }
     }
     
     private func resetTimer() {
