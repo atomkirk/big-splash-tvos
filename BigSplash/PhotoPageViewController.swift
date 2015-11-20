@@ -32,9 +32,13 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
                 preloadImagesSurrounding(controller)
         }
         self.dataSource = self
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        resetTimer()
     }
     
-    deinit {
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        UIApplication.sharedApplication().idleTimerDisabled = false
         autoSlideTimer?.invalidate()
         autoSlideTimer = nil
     }
@@ -111,9 +115,8 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
     
     private func preloadImagesSurrounding(controller: FullScreenPhotoViewController) {
         if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
-            for i in max(0, index - 2)...min(index + 2, photos.count) {
+            for i in max(0, index - 2)...min(index + 2, photos.count - 1) {
                 let photo = photos[i]
-                print("preloaded: \(i)")
                 ImageCache.shared.preloadImageAtURL(photo.fullSizeURL)
             }
         }
