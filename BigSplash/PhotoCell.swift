@@ -13,10 +13,19 @@ class PhotoCell: UICollectionViewCell {
     
     var count: Int = 0
     
+    // if the timer survives, load the image. Otherwise, we're scrolling fast so don't bother.
+    var timer: NSTimer?
+    
     var imageURL: NSURL? {
         didSet {
             imageView.image = nil
-            displayImageAtURL(imageURL)
+            timer?.invalidate()
+            if let url = imageURL where ImageCache.shared.hasImage(url) {
+                displayImageAtURL(url)
+            }
+            else {
+                timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "loadImageTimerDidFire:", userInfo: nil, repeats: false)
+            }
         }
     }
     
@@ -25,6 +34,14 @@ class PhotoCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         imageView.image = nil
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    // MARK: - Timers
+    
+    func loadImageTimerDidFire(note: NSNotification) {
+        displayImageAtURL(imageURL)
     }
     
     private func displayImageAtURL(loadURL: NSURL?) {
@@ -42,6 +59,9 @@ class PhotoCell: UICollectionViewCell {
                             self.imageView.transform = CGAffineTransformIdentity
                         }
                     }
+                }
+                else {
+                    self.displayImageAtURL(self.imageURL)
                 }
             }
         }

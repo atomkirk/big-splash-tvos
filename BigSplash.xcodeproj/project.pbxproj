@@ -386,7 +386,7 @@
 				TargetAttributes = {
 					C25734741BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 8KEA7736VV;
+						DevelopmentTeam = P3U5643N93;
 					};
 					C25734851BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
@@ -657,7 +657,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashTV;
 				PRODUCT_NAME = BigSplash;
 				PROVISIONING_PROFILE = "";
 			};
@@ -672,7 +672,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomkirk.BigSplashTV;
 				PRODUCT_NAME = BigSplash;
 				PROVISIONING_PROFILE = "";
 			};
