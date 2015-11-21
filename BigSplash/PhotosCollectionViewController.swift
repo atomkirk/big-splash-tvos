@@ -22,7 +22,11 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
         super.viewDidLoad()
         collectionView!.remembersLastFocusedIndexPath = true
         
-        self.loadMorePhotos()
+        self.loadMorePhotos {
+            self.showLaunchPhoto()
+        }
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -69,6 +73,10 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
             loadMorePhotos()
         }
     }
+    
+    override func indexPathForPreferredFocusedViewInCollectionView(collectionView: UICollectionView) -> NSIndexPath? {
+        return collectionView.indexPathsForSelectedItems()?.first
+    }
 
     
     // MARK: - UICollectionViewDelegateFlowLayout
@@ -92,6 +100,15 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
     }
     
     
+    // MARK: - Notifications
+    
+    func applicationDidBecomeActive(note: NSNotification) {
+        if photos.count > 0 {
+            showLaunchPhoto()
+        }
+    }
+    
+    
     // MARK: - Private
     
     private func loadMorePhotos(completion: (() -> Void)? = nil) {
@@ -99,6 +116,25 @@ class PhotosCollectionViewController: UICollectionViewController, UICollectionVi
             self.photos += newPhotos
             self.collectionView?.reloadData()
             completion?()
+        }
+    }
+    
+    private func showLaunchPhoto() {
+        if let delegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            if let launchIndex = delegate.launchPhotoIndex {
+                delegate.launchPhotoIndex = nil
+                let ip = NSIndexPath(forItem: launchIndex, inSection: 0)
+                if let pageController = self.presentedViewController as? PhotoPageViewController {
+                    if let controller = pageController.fullScreenControllerForPhotoAtIndex(ip.item) {
+                        pageController.setViewControllers([controller], direction: .Forward, animated: true, completion: nil)
+                    }
+                }
+                else {
+                    collectionView!.selectItemAtIndexPath(ip, animated: true, scrollPosition: UICollectionViewScrollPosition.CenteredVertically)
+                    collectionView!.setNeedsFocusUpdate()
+                    performSegueWithIdentifier("FullScreenImageSegue", sender: self)
+                }
+            }
         }
     }
     

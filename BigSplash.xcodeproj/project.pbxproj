@@ -43,6 +43,7 @@
 		C27E5C9E1BFFF76000CADB0F /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27E5C9D1BFFF76000CADB0F /* TVServices.framework */; };
 		C27E5CA11BFFF76000CADB0F /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5CA01BFFF76000CADB0F /* ServiceProvider.swift */; };
 		C27E5CA51BFFF76000CADB0F /* BigSplashTopShelfExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C27E5C9C1BFFF76000CADB0F /* BigSplashTopShelfExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C27E5CAE1C001C0F00CADB0F /* ATKShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25734D41BEC4E9E0080B996 /* ATKShared.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27E5CAE1C001C0F00CADB0F /* ATKShared.framework in Frameworks */,
 				C27E5C9E1BFFF76000CADB0F /* TVServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +429,7 @@
 			buildConfigurationList = C27E5CA61BFFF76000CADB0F /* Build configuration list for PBXNativeTarget "BigSplashTopShelfExtension" */;
 			buildPhases = (
 				C27E5C981BFFF76000CADB0F /* Sources */,
+				C27E5CB41C0021F200CADB0F /* Bump Build Number */,
 				C27E5C991BFFF76000CADB0F /* Frameworks */,
 				C27E5C9A1BFFF76000CADB0F /* Resources */,
 			);
@@ -579,6 +582,20 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		C27E5C941BFEBC3E00CADB0F /* Bump Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bump Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nif [ -e ~/.dotfiles/xcode/build.zsh ]\nthen\nsource ~/.dotfiles/xcode/build.zsh\nfi\n\nif [ \"$BUMP_BUILD_NUMBER\" = \"1\" ] ; then\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nfi";
+		};
+		C27E5CB41C0021F200CADB0F /* Bump Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

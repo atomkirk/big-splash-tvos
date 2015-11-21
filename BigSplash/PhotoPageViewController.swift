@@ -44,6 +44,24 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
     }
     
     
+    func fullScreenControllerForPhotoAtIndex(index: Int) -> UIViewController? {
+        if index > 0 && index < photos.count {
+            let photo = photos[index]
+            
+            if (photos.count - index) < 10 {
+                photoPageDelegate?.photoPageViewController(self, isReachingLastPhoto: photo)
+            }
+
+            if let firstController = storyboard?.instantiateViewControllerWithIdentifier("FullScreenPhotoViewController") as? FullScreenPhotoViewController {
+                preloadImagesSurrounding(firstController)
+                firstController.imageURL = photo.fullSizeURL
+                return firstController
+            }
+        }
+        return nil
+    }
+    
+    
     // MARK: - Timer
     
     func slideTimerDidTick(note: NSNotification) {
@@ -52,12 +70,8 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
             setViewControllers([controller], direction: .Forward, animated: true, completion: nil)
         }
         else if photos.count > 0 {
-            let photo = photos[0]
-            
-            if let firstController = storyboard?.instantiateViewControllerWithIdentifier("FullScreenPhotoViewController") as? FullScreenPhotoViewController {
-                preloadImagesSurrounding(firstController)
-                firstController.imageURL = photo.fullSizeURL
-                setViewControllers([firstController], direction: .Forward, animated: true, completion: nil)
+            if let controller = fullScreenControllerForPhotoAtIndex(0) {
+                setViewControllers([controller], direction: .Forward, animated: true, completion: nil)
             }
         }
     }
@@ -70,14 +84,8 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
         if let controller = viewController as? FullScreenPhotoViewController {
             preloadImagesSurrounding(controller)
             if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
-                let nextIndex = index - 1
-                if nextIndex >= 0 {
-                    let photo = photos[nextIndex]
-                    if let nextController = storyboard?.instantiateViewControllerWithIdentifier("FullScreenPhotoViewController") as? FullScreenPhotoViewController {
-                        nextController.imageURL = photo.fullSizeURL
-                        return nextController
-                    }
-                }
+                let previousIndex = index - 1
+                return fullScreenControllerForPhotoAtIndex(previousIndex)
             }
         }
         return nil
@@ -96,18 +104,7 @@ class PhotoPageViewController: UIPageViewController, UIPageViewControllerDataSou
             preloadImagesSurrounding(controller)
             if let index = photos.indexOf({ $0.fullSizeURL == controller.imageURL }) {
                 let nextIndex = index + 1
-                if nextIndex < photos.count {
-                    let photo = photos[nextIndex]
-                    
-                    if photos.count - nextIndex < 10 {
-                        photoPageDelegate?.photoPageViewController(self, isReachingLastPhoto: photo)
-                    }
-                    
-                    if let nextController = storyboard?.instantiateViewControllerWithIdentifier("FullScreenPhotoViewController") as? FullScreenPhotoViewController {
-                        nextController.imageURL = photo.fullSizeURL
-                        return nextController
-                    }
-                }
+                return fullScreenControllerForPhotoAtIndex(nextIndex)
             }
         }
         return nil

@@ -34,10 +34,13 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
                     let regularURL = photo["urls"]["regular"].url {
                         if let item = TVContentItem(contentIdentifier: TVContentIdentifier(identifier: id, container: nil)!) {
                             item.imageURL = regularURL
+                            let url = NSURL(string: "bigsplash://view?index=\(items.count)")
+                            item.playURL = url
+                            item.displayURL = url
                             items.append(item)
-                            if items.count > 30 {
-                                break
-                            }
+//                            if items.count > 30 {
+//                                break
+//                            }
                         }
                         
                 }
