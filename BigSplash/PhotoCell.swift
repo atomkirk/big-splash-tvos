@@ -24,7 +24,7 @@ class PhotoCell: UICollectionViewCell {
                 displayImageAtURL(url)
             }
             else {
-                timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "loadImageTimerDidFire:", userInfo: nil, repeats: false)
+                timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: "loadImageTimerDidFire:", userInfo: nil, repeats: false)
             }
         }
     }

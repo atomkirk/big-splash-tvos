@@ -40,6 +40,9 @@
 		C25734F31BEC55500080B996 /* ATKSharedUIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C25734D81BEC4E9E0080B996 /* ATKSharedUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C25734F61BEE9EB30080B996 /* PhotoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734F51BEE9EB30080B996 /* PhotoPageViewController.swift */; };
 		C25734FA1BEEA01A0080B996 /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25734F91BEEA01A0080B996 /* FullScreenPhotoViewController.swift */; };
+		C27E5C9E1BFFF76000CADB0F /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27E5C9D1BFFF76000CADB0F /* TVServices.framework */; };
+		C27E5CA11BFFF76000CADB0F /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E5CA01BFFF76000CADB0F /* ServiceProvider.swift */; };
+		C27E5CA51BFFF76000CADB0F /* BigSplashTopShelfExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C27E5C9C1BFFF76000CADB0F /* BigSplashTopShelfExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,13 @@
 			remoteGlobalIDString = C24BEF3B1BB37920004AAC33;
 			remoteInfo = ATKSharedUIKit;
 		};
+		C27E5CA31BFFF76000CADB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C257346D1BEC4DE50080B996 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C27E5C9B1BFFF76000CADB0F;
+			remoteInfo = BigSplashTopShelfExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,6 +122,17 @@
 				C25734E31BEC4EEE0080B996 /* ATKShared.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27E5CA91BFFF76000CADB0F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C27E5CA51BFFF76000CADB0F /* BigSplashTopShelfExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -153,6 +174,10 @@
 		C25734ED1BEC50B80080B996 /* PhotoSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSearchService.swift; sourceTree = "<group>"; };
 		C25734F51BEE9EB30080B996 /* PhotoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPageViewController.swift; sourceTree = "<group>"; };
 		C25734F91BEEA01A0080B996 /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
+		C27E5C9C1BFFF76000CADB0F /* BigSplashTopShelfExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BigSplashTopShelfExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27E5C9D1BFFF76000CADB0F /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		C27E5CA01BFFF76000CADB0F /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		C27E5CA21BFFF76000CADB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +204,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C27E5C991BFFF76000CADB0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27E5C9E1BFFF76000CADB0F /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -188,6 +221,7 @@
 				C25734771BEC4DE50080B996 /* BigSplash */,
 				C25734891BEC4DE50080B996 /* BigSplashTests */,
 				C25734941BEC4DE50080B996 /* BigSplashUITests */,
+				C27E5C9F1BFFF76000CADB0F /* BigSplashTopShelfExtension */,
 				C25734761BEC4DE50080B996 /* Products */,
 				C25734CB1BEC4E920080B996 /* Frameworks */,
 			);
@@ -199,6 +233,7 @@
 				C25734751BEC4DE50080B996 /* BigSplash.app */,
 				C25734861BEC4DE50080B996 /* BigSplash.xctest */,
 				C25734911BEC4DE50080B996 /* BigSplash.xctest */,
+				C27E5C9C1BFFF76000CADB0F /* BigSplashTopShelfExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				C25734CC1BEC4E9E0080B996 /* ATKShared.xcodeproj */,
+				C27E5C9D1BFFF76000CADB0F /* TVServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +343,15 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		C27E5C9F1BFFF76000CADB0F /* BigSplashTopShelfExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C27E5CA01BFFF76000CADB0F /* ServiceProvider.swift */,
+				C27E5CA21BFFF76000CADB0F /* Info.plist */,
+			);
+			path = BigSplashTopShelfExtension;
+			sourceTree = "<group>";
+		};
 		C29837251BF7DBE90014E63D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,12 +372,14 @@
 				C25734721BEC4DE50080B996 /* Frameworks */,
 				C25734731BEC4DE50080B996 /* Resources */,
 				C25734E11BEC4EDC0080B996 /* Copy Frameworks */,
+				C27E5CA91BFFF76000CADB0F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C25734F11BEC55440080B996 /* PBXTargetDependency */,
 				C25734DC1BEC4EB90080B996 /* PBXTargetDependency */,
+				C27E5CA41BFFF76000CADB0F /* PBXTargetDependency */,
 			);
 			name = BigSplash;
 			productName = BigSplash;
@@ -375,6 +422,23 @@
 			productReference = C25734911BEC4DE50080B996 /* BigSplash.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C27E5C9B1BFFF76000CADB0F /* BigSplashTopShelfExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27E5CA61BFFF76000CADB0F /* Build configuration list for PBXNativeTarget "BigSplashTopShelfExtension" */;
+			buildPhases = (
+				C27E5C981BFFF76000CADB0F /* Sources */,
+				C27E5C991BFFF76000CADB0F /* Frameworks */,
+				C27E5C9A1BFFF76000CADB0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigSplashTopShelfExtension;
+			productName = BigSplashTopShelfExtension;
+			productReference = C27E5C9C1BFFF76000CADB0F /* BigSplashTopShelfExtension.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -396,6 +460,10 @@
 					C25734901BEC4DE50080B996 = {
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = C25734741BEC4DE50080B996;
+					};
+					C27E5C9B1BFFF76000CADB0F = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = D6XWGC22PX;
 					};
 				};
 			};
@@ -421,6 +489,7 @@
 				C25734741BEC4DE50080B996 /* BigSplash */,
 				C25734851BEC4DE50080B996 /* BigSplashTests */,
 				C25734901BEC4DE50080B996 /* BigSplashUITests */,
+				C27E5C9B1BFFF76000CADB0F /* BigSplashTopShelfExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -499,6 +568,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C27E5C9A1BFFF76000CADB0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -548,6 +624,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C27E5C981BFFF76000CADB0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27E5CA11BFFF76000CADB0F /* ServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -570,6 +654,11 @@
 			isa = PBXTargetDependency;
 			name = ATKSharedUIKit;
 			targetProxy = C25734F01BEC55440080B996 /* PBXContainerItemProxy */;
+		};
+		C27E5CA41BFFF76000CADB0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C27E5C9B1BFFF76000CADB0F /* BigSplashTopShelfExtension */;
+			targetProxy = C27E5CA31BFFF76000CADB0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -675,6 +764,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atomkirk.big-splash";
@@ -690,6 +780,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BigSplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atomkirk.big-splash";
@@ -746,6 +837,36 @@
 			};
 			name = Release;
 		};
+		C27E5CA71BFFF76000CADB0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BigSplashTopShelfExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomkirk.big-splash.BigSplashTopShelfExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C27E5CA81BFFF76000CADB0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BigSplashTopShelfExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomkirk.big-splash.BigSplashTopShelfExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,6 +905,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C27E5CA61BFFF76000CADB0F /* Build configuration list for PBXNativeTarget "BigSplashTopShelfExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27E5CA71BFFF76000CADB0F /* Debug */,
+				C27E5CA81BFFF76000CADB0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
