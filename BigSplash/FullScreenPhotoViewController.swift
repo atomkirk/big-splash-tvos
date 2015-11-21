@@ -20,6 +20,18 @@ class FullScreenPhotoViewController: UIViewController {
         if let url = imageURL {
             ImageCache.shared.loadImageAtURL(url) { originalURL, cached, image in
                 self.imageView.image = image
+                // decide if image should be scaled to fit or fill
+                // If the aspect ratio is drastic (meaning it's super long or super tall, then scale to fit (show black bars where it doesn't fill)
+                let aspectRatio = image.size.height / image.size.width
+//                print("width: \(image.size.width)")
+//                print("height: \(image.size.height)")
+//                print("ratio: \(aspectRatio)")
+                if aspectRatio >= 1.0 {
+                    self.imageView.contentMode = .ScaleAspectFit
+                }
+                else {
+                    self.imageView.contentMode = .ScaleAspectFill
+                }
             }
         }
     }
